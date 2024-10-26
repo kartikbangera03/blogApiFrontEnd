@@ -1,16 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
+import {
+  Route,
+  createBrowserRouter ,
+  createRoutesFromElements ,
+  RouterProvider
+} from 'react-router-dom'
+import Homepage from './pages/Homepage'
 
+const router = createBrowserRouter(
+  createRoutesFromElements(<Route path='/' element={<Homepage/>} />)
+)
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div className='text-8xl'>App</div>
-    </>
-  )
+const App = () => {
+  return <RouterProvider router={router}/>
 }
 
 export default App
+
