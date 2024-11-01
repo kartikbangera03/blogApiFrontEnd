@@ -11,12 +11,12 @@ const BrowsePosts = () => {
     const fetchPosts = async()=>{
 
       try{
-        console.log("FETCHING POSTS FROM PORT 8000")
+        // console.log("FETCHING POSTS FROM PORT 8000")
         const res = await fetch('http://localhost:8000/posts');
         const data = await res.json();
         setPosts(data)
 
-        console.log(data)
+        // console.log(data)
       }catch(error){
         console.log('Error Fetching Data')
       }finally {
