@@ -17,17 +17,18 @@ const AddCommentForm = ({addCommentToPost}) => {
     }
 
     addCommentToPost(newComment , postId)
-    return navigate('/posts/'+postId)
+    // return navigate('/posts/'+postId)
+    return
   }
 
   return (
-    <div className='py-4'>
+    <div className='pb-4'>
         <form action="" className='flex flex-col gap-2 ' onSubmit={submitComment}>
 
-            <input className='px-2 py-2' type="text" name="commentAuthor" placeholder='Username'required 
+            <input className='px-2 py-2 rounded-lg' type="text" name="commentAuthor" placeholder='Username'required 
             value={commentAuthor} onChange={(e)=>setCommentAuthor(e.target.value)}/>
     
-            <textarea className='px-2' name="comment" id="comment" cols="30" rows="5" placeholder='Leave a Comment' required 
+            <textarea className='px-2 py-2 rounded-lg ' name="comment" id="comment" cols="30" rows="5" placeholder='Leave a Comment' required 
             value={text} onChange={(e)=>setCommentText(e.target.value)}></textarea>
 
             <button className='border-2 w-40 py-2 bg-yellow-300 rounded-xl' type='submit'>Post Comment</button>

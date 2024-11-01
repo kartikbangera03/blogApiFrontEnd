@@ -2,6 +2,8 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useState ,useEffect } from 'react';
 import AddCommentForm from '../components/AddCommentForm';
+import EachComment from '../components/EachComment';
+
 
 const options = { 
     year: 'numeric', 
@@ -64,7 +66,7 @@ const ViewPost = () => {
 
     // console.log(postId)
     return (
-    <section className='px-4 bg-gray-100 m-auto text-center xl:px-20 xl:text-2xl'>
+    <section className='px-4 bg-gray-100 m-auto text-center xl:px-20 xl:text-2xl pb-4'>
         <div className='text-4xl font-semibold py-3 xl:py-10'>{post.title}</div>
         <div className='m-auto'>
             <img className='ml-auto mr-auto block' src={post.imageUrl} alt="" />
@@ -76,10 +78,7 @@ const ViewPost = () => {
         {comments && comments.length>0 
         &&
         comments.map((comment)=>(
-            <div className='border-2 text-left px-4 py-4 rounded-lg mb-4'>
-                <div className='text-sm'>By : {comment.commentAuthor}</div>
-                <div className='text-lg '>{comment.text}</div>
-            </div>
+            <EachComment comment={comment}/>
         ))
         }
 
