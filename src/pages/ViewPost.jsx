@@ -66,21 +66,26 @@ const ViewPost = () => {
 
     // console.log(postId)
     return (
-    <section className='px-4 bg-gray-100 m-auto text-center xl:px-20 xl:text-2xl pb-4'>
+    <section className='px-4 bg-gray-100 m-auto text-center xl:px-20 xl:text-2xl pb-4 pt-8'>
         <div className='text-4xl font-semibold py-3 xl:py-10'>{post.title}</div>
         <div className='m-auto'>
             <img className='ml-auto mr-auto block' src={post.imageUrl} alt="" />
         </div>
-        <div className='py-2 text-left xl:text-xl' >{new Date(post.updatedAt).toLocaleString('en-US', options)}</div>
-        <div>{post.body}</div>
-        <div className='text-left py-5 '>Comments ({comments && comments.length})</div>
-        <AddCommentForm addCommentToPost={addComment}/>
-        {comments && comments.length>0 
-        &&
-        comments.map((comment)=>(
-            <EachComment comment={comment}/>
-        ))
-        }
+        
+        
+        <div className='xl: w-8/12 m-auto py-5'>
+            <div className='py-2 text-left xl:text-xl' >{new Date(post.updatedAt).toLocaleString('en-US', options)}</div>
+            <div className='text-left xl:text-lg'>{post.body}</div>
+            <div className='text-left py-5 '>Comments ({comments && comments.length})</div>
+            <AddCommentForm addCommentToPost={addComment}/>
+            {comments && comments.length>0 
+            &&
+            comments.map((comment)=>(
+                <EachComment comment={comment}/>
+            ))
+            }
+        </div>
+        
 
     </section>
   )
