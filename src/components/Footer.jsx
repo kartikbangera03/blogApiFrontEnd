@@ -5,17 +5,19 @@ import { FaFacebook ,FaInstagram , FaPinterest , FaTwitter } from "react-icons/f
 const Footer = () => {
   return (
     <div className='
-    justify-center w-full py-2 px-2 
+    justify-center w-full py-2 px-2 bg-slate-100
     sm:flex-col  '>
 
       <div className='
       flex justify-between m-auto py-2 px-4
-      sm:flex-col  
-      md:flex-row  md:justify-between md:w-full md:px-6 
-      lg:flex-row'>
+      sm:flex-row  
+      md:flex-row 
+      xl:w-3/4 
+      2xl:w-2/4
+      '>
           <div className='
           flex flex-col justify-start text-sm gap-1 
-          sm:text-lg
+          sm:text-md
           '>
                 <div className='
                 text-center font-semibold '>SIGN UP TO OUR NEWSLETTER</div>
@@ -31,7 +33,7 @@ const Footer = () => {
 
           <div className='
           flex flex-col font-semibold text-xs  
-          sm:text-lg
+          sm:text-md
           '>     
                 <div className='
                 text-center py-1 '>FOLLOW US </div>

@@ -31,17 +31,22 @@ const BrowsePosts = () => {
   return (
 
     <section className='
-    text-center'>
+    text-center
+    md:py-5
+    lg:m-auto
+    '>
         <div className='
         text-xl py-2 font-semibold
-        sm:pt-5
         '>Browse Posts</div>
 
        
-          <div className=' m-auto grid py-2 px-4  gap-4 
+          <div className='grid py-2 px-4  gap-4 
           sm:grid-cols-2 
-          lg:grid-cols-3 
-          xl:grid-cols-4   '>
+          md:grid-cols-3 md:w-full
+          lg:grid-cols-3 lg:w-full lg:m-auto lg:pb-5
+          xl:grid-cols-3 xl:w-3/4 xl:m-auto
+          2xl:w-2/4
+           '>
             {
               posts.map((post)=>(
                 <Post key={post.id} post ={post}/>

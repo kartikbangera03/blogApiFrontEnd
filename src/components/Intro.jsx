@@ -5,7 +5,7 @@ const Intro = () => {
 
     
     <section className='h-auto bg-gray-100
-      sm:flex sm:h-96  sm:inline-block'>
+      sm:flex sm:h-96  '>
        
             <div className='
             m-auto py-32 h-1/2 text-center flex flex-col items-center justify-center gap-2 text-black
@@ -15,7 +15,7 @@ const Intro = () => {
                     '>Explore Photography</div>
                     <div className='
                     text-md
-                    sm:text-lg
+                    sm:text-lg font-bold
                     '>Learn to take photos like a professional</div>
             </div>
 

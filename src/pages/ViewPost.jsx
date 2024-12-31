@@ -67,9 +67,10 @@ const ViewPost = () => {
     // console.log(postId)
     return (
     <section className='
-     bg-gray-100  w-full px-2
-     sm:px-5 sm:pt-5
-    xl:px-20 xl:text-2xl '>
+     bg-gray-100  w-full px-2 mb-3
+        sm:px-5 sm:pt-5
+        xl:w-2/4 xl:rounded-md xl:mb-10 xl:text-2xl xl:m-auto
+        '>
         <div className='
         text-2xl font-semibold pt-16 text-left 
         sm:pt-20 
