@@ -4,22 +4,19 @@ const Intro = () => {
   return (
 
     
-    <section className='h-auto sm:grid sm:grid-cols-2  bg-gray-100'>
+    <section className='h-auto bg-gray-100
+      sm:flex sm:h-96  sm:inline-block'>
        
             <div className='
             m-auto py-32 h-1/2 text-center flex flex-col items-center justify-center gap-2 text-black
-            sm:py-24 sm:h-full'>
-                    <div className='
-                    text-4xl font-bold py-5
+            sm:py-0 sm:h-full sm:text-sm '>
+                    <div className='bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-5xl font-bold py-5 text-transparent bg-clip-text 
+                    sm:text-6xl
                     '>Explore Photography</div>
                     <div className='
                     text-md
+                    sm:text-lg
                     '>Learn to take photos like a professional</div>
-            </div>
-            <div className='
-            hidden
-            sm:h-1/2'>
-                <img className='' src="https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Woman clicking photo" />
             </div>
 
     </section>

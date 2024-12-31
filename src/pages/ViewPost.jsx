@@ -68,9 +68,11 @@ const ViewPost = () => {
     return (
     <section className='
      bg-gray-100  w-full px-2
+     sm:px-5 sm:pt-5
     xl:px-20 xl:text-2xl '>
         <div className='
         text-2xl font-semibold pt-16 text-left 
+        sm:pt-20 
         xl:py-10'>{post.title}</div>
         <div className='m-auto'>
             <img className='ml-auto mr-auto block' src={post.imageUrl} alt="" />
@@ -84,7 +86,8 @@ const ViewPost = () => {
              text-left text-sm
              xl:text-xl' >{new Date(post.updatedAt).toLocaleString('en-US', options)}</div>
             <div className='
-            text-left text-sm px-2
+            text-left text-sm
+            sm:text-lg
             xl:text-lg'>{post.body}</div>
             <div className='text-left py-5 '>Comments ({comments && comments.length})</div>
             <AddCommentForm addCommentToPost={addComment}/>

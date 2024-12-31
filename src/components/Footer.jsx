@@ -10,11 +10,13 @@ const Footer = () => {
 
       <div className='
       flex justify-between m-auto py-2 px-4
-      sm:flex-col   
+      sm:flex-col  
       md:flex-row  md:justify-between md:w-full md:px-6 
       lg:flex-row'>
           <div className='
-          flex flex-col justify-start text-sm gap-1 '>
+          flex flex-col justify-start text-sm gap-1 
+          sm:text-lg
+          '>
                 <div className='
                 text-center font-semibold '>SIGN UP TO OUR NEWSLETTER</div>
                 <div className=''>
@@ -28,8 +30,9 @@ const Footer = () => {
           </div>
 
           <div className='
-          flex flex-col font-semibold text-xs  '>
-                
+          flex flex-col font-semibold text-xs  
+          sm:text-lg
+          '>     
                 <div className='
                 text-center py-1 '>FOLLOW US </div>
                 <div className='
@@ -43,7 +46,9 @@ const Footer = () => {
 
       </div>
       
-      <div className='text-xs text-center py-1 '>
+      <div className='text-xs text-center py-1 
+      sm:text-sm
+      '>
         &#169; 2024 Copyright : PhotoAlchemy.com  
       </div>        
     </div>

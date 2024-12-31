@@ -34,13 +34,13 @@ const BrowsePosts = () => {
     text-center'>
         <div className='
         text-xl py-2 font-semibold
-        
+        sm:pt-5
         '>Browse Posts</div>
 
        
           <div className=' m-auto grid py-2 px-4  gap-4 
           sm:grid-cols-2 
-          lg:grid-cols-3 lg:w-3/5 
+          lg:grid-cols-3 
           xl:grid-cols-4   '>
             {
               posts.map((post)=>(
