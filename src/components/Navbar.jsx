@@ -4,13 +4,13 @@ import logoImage from "../assets/camera-svgrepo-com.svg"
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-between items-start w-full py-5 px-10 absolute'>
+    <nav className='flex justify-between items-start w-full px-2 absolute sm:py-5 sm:px-10 md:px-20 lg:justify-evenly '>
         <div className='flex items-center font-semibold text-xl text-black'>    
             <img className='ml-auto mr-auto block h-14 w-auto' src={logoImage} alt="" />
-            <div className=''>PhotoAlchemy</div>
+            <div className='hidden sm:block'>Alchemy</div>
         </div>
 
-        <Link className='flex items-center font-semibold text-xl h-14 text-black'
+        <Link className='flex items-center font-semibold text-lg h-14 text-black  sm:text-xl'
         to="/"
         >
         Home

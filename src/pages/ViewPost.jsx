@@ -66,16 +66,26 @@ const ViewPost = () => {
 
     // console.log(postId)
     return (
-    <section className='px-4 bg-gray-100 m-auto text-center xl:px-20 xl:text-2xl pb-4 pt-8'>
-        <div className='text-4xl font-semibold py-3 xl:py-10'>{post.title}</div>
+    <section className='
+     bg-gray-100  w-full px-2
+    xl:px-20 xl:text-2xl '>
+        <div className='
+        text-2xl font-semibold pt-16 text-left 
+        xl:py-10'>{post.title}</div>
         <div className='m-auto'>
             <img className='ml-auto mr-auto block' src={post.imageUrl} alt="" />
         </div>
         
         
-        <div className='xl: w-8/12 m-auto py-5'>
-            <div className='py-2 text-left xl:text-xl' >{new Date(post.updatedAt).toLocaleString('en-US', options)}</div>
-            <div className='text-left xl:text-lg'>{post.body}</div>
+        <div className='
+        w-full py-2
+        xl: w-8/12 '>
+            <div className='
+             text-left text-sm
+             xl:text-xl' >{new Date(post.updatedAt).toLocaleString('en-US', options)}</div>
+            <div className='
+            text-left text-sm px-2
+            xl:text-lg'>{post.body}</div>
             <div className='text-left py-5 '>Comments ({comments && comments.length})</div>
             <AddCommentForm addCommentToPost={addComment}/>
             {comments && comments.length>0 
